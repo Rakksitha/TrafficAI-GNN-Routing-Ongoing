@@ -67,8 +67,6 @@ Joshikaa K, Rakksitha R, Niroshini K
 ##  To-Do / Roadmap
 - Integrate frontend (Streamlit) with FastAPI
 
-- Train GNN with real-world traffic datasets
-
 - Export results to GIS-friendly formats
 
 - Add Docker support for full-stack deployment
