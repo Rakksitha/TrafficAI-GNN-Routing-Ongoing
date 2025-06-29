@@ -33,18 +33,18 @@ Initiated as part of **TNWISE 2025 Hackathon** (Theme: Smart Mobility), it’s n
 
 ##  Quick Start
 
-- Step 1: Clone the repository
-git clone https://github.com/<your-username>/TrafficAI.git
-cd TrafficAI
+- Step 1: Clone the repository<br>
+    git clone https://github.com/<your-username>/TrafficAI.git<br>
+    cd TrafficAI
 
-- Step 2: Create and activate virtual environment
-python -m venv .venv
+- Step 2: Create and activate virtual environment<br>
+python -m venv .venv<br>
 source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 
-- Step 3: Install dependencies
+- Step 3: Install dependencies<br>
 pip install -r backend/requirements.txt
 
-- Step 4: Run sample demo
+- Step 4: Run sample demo<br>
 python backend/sample.py
 
 ##  Sample Output Preview
