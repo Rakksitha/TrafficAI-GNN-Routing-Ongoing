@@ -1,9 +1,9 @@
-# 🚦 AI‑Optimized Traffic Flow & Route Planning  
+#  AI‑Optimized Traffic Flow & Route Planning  
 *Graph Neural Networks + A\* Algorithm*
 
 
 
-## 📌 Overview
+##  Overview
 This **ongoing project** combines **Graph Neural Networks (GNN)** with **A\*** search to build an intelligent urban traffic system that:
 - Predicts congestion levels in real-time
 - Suggests optimized routes based on user-defined priorities
@@ -13,7 +13,7 @@ Initiated as part of **TNWISE 2025 Hackathon** (Theme: Smart Mobility), it’s n
 
 
 
-## ⚙️ Key Features
+##  Key Features
 -  **GNN-based Congestion Prediction** using PyTorch and DGL
 -  **A\*** Search Path Planning optimized by GNN edge weights
 -  **Priority-based Routing Options:**
@@ -27,11 +27,11 @@ Initiated as part of **TNWISE 2025 Hackathon** (Theme: Smart Mobility), it’s n
 <p align="center"> <img src="images/streamlit_ui.png" width="70%"> <br><em>Prototype UI (Streamlit) – route settings, traffic chart & heat‑map</em> </p>
 
 
-## 🧱 System Architecture
+##  System Architecture
 
 <p align="center"> <img src="images/system_architecture.png" width="70%"> <br><em>System Architecture</em> </p>
 
-## 🚀 Quick Start
+##  Quick Start
 
 - Step 1: Clone the repository
 git clone https://github.com/<your-username>/TrafficAI.git
@@ -47,7 +47,7 @@ pip install -r backend/requirements.txt
 - Step 4: Run sample demo
 python backend/sample.py
 
-## 🧪 Sample Output Preview
+##  Sample Output Preview
 
 Before frontend integration, the route logic was tested using terminal simulations.
 
@@ -61,10 +61,10 @@ Before frontend integration, the route logic was tested using terminal simulatio
 
 > ✅ This validates that the GNN-assisted A* routing system functions as intended.
 
-## 👥 Team
+##  Team
 Joshikaa K, Rakksitha R, Niroshini K
 
-## 📝 To-Do / Roadmap
+##  To-Do / Roadmap
 - Integrate frontend (Streamlit) with FastAPI
 
 - Train GNN with real-world traffic datasets
