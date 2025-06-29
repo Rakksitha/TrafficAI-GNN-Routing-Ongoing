@@ -1,0 +1,7 @@
+.venv310/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+sam.py
+samplee.py

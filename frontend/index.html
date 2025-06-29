@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Traffic Optimizer</title>
+    
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar for Inputs -->
+    <div id="sidebar">
+        <h2>🚦 AI Traffic Optimizer</h2>  <!-- ADDED TITLE -->
+
+        <h3>📍 Route Settings</h3>
+
+        <label>Source Latitude:</label>
+        <input type="number" id="start_x" value="11.6632" step="0.0001">
+
+        <label>Source Longitude:</label>
+        <input type="number" id="start_y" value="78.1462" step="0.0001">
+
+        <label>Destination Latitude:</label>
+        <input type="number" id="dest_x" value="11.6612" step="0.0001">
+
+        <label>Destination Longitude:</label>
+        <input type="number" id="dest_y" value="78.1510" step="0.0001">
+
+        <label>Select Route Priority:</label>
+        <select id="priority">
+            <option value="red">Fastest Route (Red)</option>
+            <option value="yellow" selected>Balanced Route (Yellow)</option>
+            <option value="green">Low Congestion Route (Green)</option>
+        </select>
+
+        <button onclick="fetchRoute()">🚗 Get Optimized Route</button>
+    </div>
+
+    <!-- Right Content: Charts & Stick Map -->
+    <div id="main-content">
+        <div id="charts-container">
+            <div id="traffic-flow" class="chart"></div>   <!-- Traffic Flow Chart -->
+            <div id="congestion" class="chart"></div>     <!-- Congestion Chart -->
+        </div>
+        <div id="stick-map"></div>  <!-- Stick Map Structure -->
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>

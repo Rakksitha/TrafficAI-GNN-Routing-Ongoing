@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar for Inputs */
+#sidebar {
+    width: 35%;  /* Increased width */
+    background: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar h2 {   /* Title Styling */
+    color: #007bff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#sidebar h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#sidebar label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+}
+
+#sidebar input, #sidebar select, #sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Button Styling */
+#sidebar button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#sidebar button:hover {
+    background: #0056b3;
+}
+
+/* Main Content (Charts & Stick Map) */
+#main-content {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Charts Container */
+#charts-container {
+    display: flex;
+    gap: 10px;
+    height: 50%; /* Charts take half of the right side */
+}
+
+/* Congestion Heatmap Section */
+#congestion-map {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Each Chart */
+.chart {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    padding: 10px;
+}
+
+
+/* Stick Map Container */
+#stick-map {
+    width: 100%;
+    height: 50%;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* Stick Map Node Styling */
+.stick-node {
+    padding: 5px;
+    background: #007bff;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Stick Map Line (Connector) */
+.stick-line {
+    width: 20px;
+    height: 2px;
+    background: black;
+    margin: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #main-content {
+        width: 100%;
+    }
+
+    #charts-container {
+        flex-direction: column;
+    }
+
+    .chart {
+        width: 100%;
+        height: 200px;
+    }
+}
